@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <CustomJSONLayout />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="rootLogger" level="info">
+            <AppenderRef ref="Console-Appender"/>
+        </AsyncLogger>
+        <Root level="info">
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>
